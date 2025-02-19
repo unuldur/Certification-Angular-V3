@@ -1,0 +1,13 @@
+<div class="tab-bar-items">
+    <button 
+        *ngFor="let tabItem of tabItems; index as index"
+        (click)="selectTabItem(index)"
+        class="tab-item"
+        [class.tab-item-active]="tabItem.isActive">
+            {{tabItem.title}}
+            <button class="button-close"  (click)="tabItem.closeTab.emit()">x</button>
+    </button>
+</div>
+<div class="tab-content">
+    <ng-content></ng-content>
+</div>

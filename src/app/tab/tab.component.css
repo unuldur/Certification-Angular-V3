@@ -1,0 +1,40 @@
+.tab-item {
+    border: none;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 0.25rem 1rem;
+    font-size: large;
+    align-items: center;
+}
+
+.tab-item-active {
+    background-color: #617aa0;
+    color: white ;
+}
+
+.tab-content {
+    border: black 1px solid;
+    padding: 12px;
+}
+
+.button-close {
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    border: none;
+}
+
+.button-close:hover {
+    color: #00000050;
+
+}
+
+
+.tab-bar-items {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+}

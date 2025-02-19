@@ -1,7 +1,6 @@
-.close {
-  cursor: pointer;
-}
-.flex {
+
+.card {
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }

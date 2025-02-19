@@ -1,0 +1,12 @@
+.cache-editor {
+    display: flex;
+    flex-direction: row;
+    place-items: center;
+    gap: 0.5rem;
+    padding: 1.5rem 0rem;
+}
+
+.cache-editor__label {
+    font-weight: normal;
+    margin: 0;
+}
