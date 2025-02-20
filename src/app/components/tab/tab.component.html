@@ -8,6 +8,6 @@
             <button class="button-close"  (click)="tabItem.closeTab.emit()">x</button>
     </button>
 </div>
-<div class="tab-content">
+<div class="tab-content" *ngIf="tabItems.length > 0">
     <ng-content></ng-content>
 </div>
