@@ -3,22 +3,22 @@ import { NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 
 import { AppComponent } from "./app.component";
-import { ZipcodeEntryComponent } from "./zipcode-entry/zipcode-entry.component";
-import { LocationService } from "./location.service";
-import { ForecastsListComponent } from "./forecasts-list/forecasts-list.component";
-import { WeatherService } from "./weather.service";
-import { CurrentConditionsComponent } from "./current-conditions/current-conditions.component";
-import { MainPageComponent } from "./main-page/main-page.component";
+import { ZipcodeEntryComponent } from "./components/zipcode-entry/zipcode-entry.component";
+import { ForecastsListComponent } from "./components/forecasts-list/forecasts-list.component";
+import { CurrentConditionsComponent } from "./components/current-conditions/current-conditions.component";
+import { MainPageComponent } from "./components/main-page/main-page.component";
 import { RouterModule } from "@angular/router";
 import { routing } from "./app.routing";
 import { provideHttpClient, withInterceptors } from "@angular/common/http";
 import { ServiceWorkerModule } from "@angular/service-worker";
 import { environment } from "../environments/environment";
-import { TabItemComponent } from "./tab/tab-item/tab-item.component";
-import { TabComponent } from "./tab/tab.component";
-import { cacheInterceptor } from "./cache.interceptor";
-import { CacheService } from "./cache.service";
-import { CacheEditorComponent } from "./cache-editor/cache-editor.component";
+import { CacheEditorComponent } from "./components/cache-editor/cache-editor.component";
+import { cacheInterceptor } from "./interceptors/cache.interceptor";
+import { CacheService } from "./services/cache.service";
+import { LocationService } from "./services/location.service";
+import { WeatherService } from "./services/weather.service";
+import { TabItemComponent } from "./components/tab/tab-item/tab-item.component";
+import { TabComponent } from "./components/tab/tab.component";
 
 @NgModule({
   declarations: [

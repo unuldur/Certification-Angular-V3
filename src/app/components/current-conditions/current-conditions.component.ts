@@ -1,8 +1,8 @@
 import {Component, inject, Signal} from '@angular/core';
-import {WeatherService} from "../weather.service";
-import {LocationService} from "../location.service";
 import {Router} from "@angular/router";
-import {ConditionsAndZip} from '../conditions-and-zip.type';
+import { LocationService } from 'app/services/location.service';
+import { WeatherService } from 'app/services/weather.service';
+import { ConditionsAndZip } from 'app/types/conditions-and-zip.type';
 
 @Component({
   selector: 'app-current-conditions',

@@ -5,9 +5,9 @@ import {
   HttpResponse,
 } from "@angular/common/http";
 import { inject } from "@angular/core";
+import { CacheService } from "app/services/cache.service";
 import { Observable, of } from "rxjs";
 import { tap } from "rxjs/operators";
-import { CacheService } from "./cache.service";
 
 export function cacheInterceptor(
   req: HttpRequest<unknown>,

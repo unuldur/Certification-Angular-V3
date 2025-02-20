@@ -1,20 +1,17 @@
 import {
-  computed,
   inject,
   Injectable,
   signal,
   Signal,
-  WritableSignal,
 } from "@angular/core";
-import { toSignal, toObservable } from "@angular/core/rxjs-interop";
+import { toObservable } from "@angular/core/rxjs-interop";
 import { forkJoin, Observable, of } from "rxjs";
 import { catchError, map, mergeMap } from "rxjs/operators";
 import { HttpClient } from "@angular/common/http";
-import { CurrentConditions } from "./current-conditions/current-conditions.type";
-import { ConditionsAndZip } from "./conditions-and-zip.type";
-import { Forecast } from "./forecasts-list/forecast.type";
 import { LocationService } from "./location.service";
-import { Conditional } from "@angular/compiler";
+import { Forecast } from "app/components/forecasts-list/forecast.type";
+import { ConditionsAndZip } from "app/types/conditions-and-zip.type";
+import { CurrentConditions } from "app/types/current-conditions.type";
 
 @Injectable()
 export class WeatherService {

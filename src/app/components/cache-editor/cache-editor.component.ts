@@ -1,5 +1,5 @@
 import { Component, inject } from "@angular/core";
-import { CacheService } from "app/cache.service";
+import { CacheService } from "app/services/cache.service";
 
 @Component({
   selector: "app-cache-editor",
